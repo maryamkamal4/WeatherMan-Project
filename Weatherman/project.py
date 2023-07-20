@@ -5,7 +5,7 @@ import utils
 
 
 def by_year(year, city):
-    selected_columns = [0, 1, 3]  # Example: Selecting columns at index 1, 3
+    selected_columns = [0, 1, 3, 7]  # Example: Selecting columns at index 1, 3
 
     highest_temp = float('-inf')  # Initialize highest temperature with negative infinity
     lowest_temp = float('inf')  # Initialize lowest temperature with positive infinity
