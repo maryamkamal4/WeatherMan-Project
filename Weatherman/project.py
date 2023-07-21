@@ -49,7 +49,7 @@ def by_month(year_month, city):
 
     year, month = year_month.split('/')
     avg_highest_temperature = 0
-    avg_lowest_temperature = 0
+    avg_lowest_temperature = float('inf')
     avg_humidity = 0
 
     count = 0
@@ -71,6 +71,7 @@ def by_month(year_month, city):
 
                     if temp_value < avg_lowest_temperature:
                         avg_lowest_temperature = temp_value
+                        # print(avg_lowest_temperature)
 
                     sum_temps += temp_value
                     count += 1
